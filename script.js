@@ -1,5 +1,5 @@
 function calculateVolumes() {
-    const samples = parseInt(document.getElementById('samples').value);
+    const samples = Math.ceil(parseInt(document.getElementById('samples').value)/8);
     const concentration = parseFloat(document.getElementById('concentration').value);
 
     if (isNaN(samples) || isNaN(concentration)) {
